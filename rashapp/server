@@ -1,0 +1,1698 @@
+Script started on Tuesday 06 March 2012 11:55:29 AM IST
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ ps ax grep passenger [1@|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P|ruby 3001[7@assenger start -p[C[C[C[C[C[Ks ax |grep passenger[6Passenger start
+*** ERROR ***
+The address 0.0.0.0:3000 is already in use by another process, perhaps another
+Phusion Passenger Standalone instance.
+
+If you want to run this Phusion Passenger Standalone instance on another port,
+use the -p option, like this:
+
+  passenger start -p 3001
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3002
+*** ERROR ***
+The address 0.0.0.0:3002 is already in use by another process, perhaps another
+Phusion Passenger Standalone instance.
+
+If you want to run this Phusion Passenger Standalone instance on another port,
+use the -p option, like this:
+
+  passenger start -p 3003
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3002[K1
+*** ERROR ***
+The address 0.0.0.0:3001 is already in use by another process, perhaps another
+Phusion Passenger Standalone instance.
+
+If you want to run this Phusion Passenger Standalone instance on another port,
+use the -p option, like this:
+
+  passenger start -p 3002
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3001[K3
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3003.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3003.log
+Environment: development
+Accessible via: http://0.0.0.0:3003/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+[ pid=17190 thr=70588220 file=utils.rb:176 time=2012-03-06 11:56:32.433 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::Rack::ApplicationSpawner (Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)) (process 17190, thread #<Thread:0x86a2e78>):
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs/runtimes.rb:50:in `autodetect'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:4:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `block (2 levels) in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `block in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:122:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/application.rb:7:in `<top (required)>'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `instance_eval'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `eval'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `load_rack_app'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:157:in `block in initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:154:in `initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+[ pid=17190 thr=70588220 file=utils.rb:176 time=2012-03-06 12:01:26.597 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::Rack::ApplicationSpawner (Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)) (process 17190, thread #<Thread:0x86a2e78>):
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs/runtimes.rb:50:in `autodetect'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:4:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `block (2 levels) in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `block in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:122:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/application.rb:7:in `<top (required)>'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `instance_eval'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `eval'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `load_rack_app'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:157:in `block in initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:154:in `initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ pid=17190 thr=70588220 file=utils.rb:176 time=2012-03-06 12:01:47.185 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::Rack::ApplicationSpawner (Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)) (process 17190, thread #<Thread:0x86a2e78>):
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs/runtimes.rb:50:in `autodetect'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:4:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `block (2 levels) in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `block in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:122:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/application.rb:7:in `<top (required)>'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `instance_eval'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `eval'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `load_rack_app'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:157:in `block in initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:154:in `initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B                                    ^X  ^Z
+[1]+  Stopped                 passenger start -p 3003
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 300313[K4
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3004.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3004.log
+Environment: development
+Accessible via: http://0.0.0.0:3004/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+[ pid=17943 thr=70162240 file=utils.rb:176 time=2012-03-06 12:31:57.620 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::Rack::ApplicationSpawner (Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)) (process 17943, thread #<Thread:0x85d2e80>):
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs/runtimes.rb:50:in `autodetect'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:5:in `<module:ExecJS>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.3.0/lib/execjs.rb:4:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee_script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-script-2.2.0/lib/coffee-script.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/coffee-rails-3.2.2/lib/coffee-rails.rb:1:in `<top (required)>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:68:in `block (2 levels) in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:66:in `block in require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `each'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/runtime.rb:55:in `require'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:122:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/application.rb:7:in `<top (required)>'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `require'
+	from /home/icicle/Desktop/rashmi/rashapp/config/environment.rb:2:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `instance_eval'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.4.1/lib/rack/builder.rb:51:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `eval'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:225:in `load_rack_app'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:157:in `block in initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:154:in `initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+^[[A    
+
+
+
+^Z
+[2]+  Stopped                 passenger start -p 3004
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3004[K5
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3005.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3005.log
+Environment: development
+Accessible via: http://0.0.0.0:3005/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+[ pid=18123 thr=80684860 file=utils.rb:176 time=2012-03-06 12:39:42.879 ]: *** Exception NameError in PhusionPassenger::Rack::ApplicationSpawner (undefined local variable or method `on' for #<Bundler::Dsl:0x9f8a2b0>) (process 18123, thread #<Thread:0x99e4e78>):
+	from /home/icicle/Desktop/rashmi/rashapp/Gemfile:27:in `evaluate'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/dsl.rb:7:in `instance_eval'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/dsl.rb:7:in `evaluate'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler/definition.rb:17:in `build'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:138:in `definition'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:126:in `load'
+	from /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.0.22/lib/bundler.rb:110:in `setup'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:326:in `prepare_app_process'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:154:in `initialize_server'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+^Z
+[3]+  Stopped                 passenger start -p 3005
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3005[K6
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3006.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3006.log
+Environment: development
+Accessible via: http://0.0.0.0:3006/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 12:41:23 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "puser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__775135584__call__477644642__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.0ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.4ms)
+^[[B^[[B^[[B^[[A^Z
+[4]+  Stopped                 passenger start -p 3006
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3006[K7
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3007.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3007.log
+Environment: development
+Accessible via: http://0.0.0.0:3007/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 12:47:24 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "puser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__845353671__call__344438362__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.2ms)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^Z
+[5]+  Stopped                 passenger start -p 3007
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3007[K8
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3008.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3008.log
+Environment: development
+Accessible via: http://0.0.0.0:3008/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:03:53 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "puser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__642499849__call__542493181__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.3ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.9ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-03-06 13:03:56 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "puser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__642499849__call__542493181__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.0ms)
+^[[B
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:04:12 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "puser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__260270716__call__384117933__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+^[[A  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.4ms)
+^[[B^Z
+[6]+  Stopped                 passenger start -p 3008
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3008[K9
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3009.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3009.log
+Environment: development
+Accessible via: http://0.0.0.0:3009/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:08:09 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "prash"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__126761721__call__615301815__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.1ms)
+^[[B^[[B^[[B^[[B^[[B
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:09:08 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "prash"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__126761721__call__615301815__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (40.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.6ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:09:12 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "prash"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__126761721__call__615301815__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-03-06 13:09:14 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "prash"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__126761721__call__615301815__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.5ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.4ms)
+^Z
+[7]+  Stopped                 passenger start -p 3009
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3009[K[K10
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3010.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3010.log
+Environment: development
+Accessible via: http://0.0.0.0:3010/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:10:06 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "puser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__438007096__call__879520430__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.2ms)
+^Z
+[8]+  Stopped                 passenger start -p 3010
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3010[C[K1
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3011.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3011.log
+Environment: development
+Accessible via: http://0.0.0.0:3011/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:12:58 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "postgresuser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__633047591__call__904889357__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.2ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.7ms)
+[ pid=19834 thr=3069287280 file=ext/nginx/HelperAgent.cpp:923 time=2012-03-06 13:12:58.499 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-03-06 13:13:11 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "postgresuser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__633047591__call__904889357__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (34.8ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.2ms)
+^Z
+[9]+  Stopped                 passenger start -p 3011
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3011[K2
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3012.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3012.log
+Environment: development
+Accessible via: http://0.0.0.0:3012/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:14:30 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "postgresuser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__404858574__call__794815635__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.6ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.5ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-03-06 13:14:31 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "postgresuser"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__404858574__call__794815635__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.7ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+^Z
+[10]+  Stopped                 passenger start -p 3012
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 301212[K3
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3013.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3013.log
+Environment: development
+Accessible via: http://0.0.0.0:3013/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:20:04 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "prash"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__123727639__call__69154227__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.8ms)
+^Z
+[11]+  Stopped                 passenger start -p 3013
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3013[K4
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3014.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3014.log
+Environment: development
+Accessible via: http://0.0.0.0:3014/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-03-06 13:21:49 +0530
+
+PG::Error (FATAL:  Ident authentication failed for user "prash"
+):
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:1194:in `connect'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/icicle/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.2) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__123727639__call__69154227__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  /home/icicle/.passenger/standalone/3.0.11-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (35.1ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/icicle/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.4ms)
+^Z
+[12]+  Stopped                 passenger start -p 3014
+]0;icicle@icicle-laptop-g4: ~/Desktop/rashmi/rashappicicle@icicle-laptop-g4:~/Desktop/rashmi/rashapp$ passenger start -p 3014[K5
+=============== Phusion Passenger Standalone web server started ===============
+PID file: /home/icicle/Desktop/rashmi/rashapp/tmp/pids/passenger.3015.pid
+Log file: /home/icicle/Desktop/rashmi/rashapp/log/passenger.3015.log
+Environment: development
+Accessible via: http://0.0.0.0:3015/
+
+You can stop Phusion Passenger Standalone by pressing Ctrl-C.
+===============================================================================
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:37:08 +0530
+Served asset /rails.png - 200 OK (29ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-03-06 13:37:13 +0530
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-03-06 13:37:15 +0530
+Processing by Rails::InfoController#properties as HTML
+  Rendered inline template (0.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord:
